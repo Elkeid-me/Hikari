@@ -1,10 +1,10 @@
-# 关于BlueTex主题
+# 关于Hikari主题
 
 [TOC]
 
 # 文本
 
-这是一段正文内容样式，以下是不同文本样式效果式效果：**这是加粗文本样式**, <u>这是下划线样式</u>, *这是斜体字样式*,  [这是超链接样式：DaYangtuo247/typora-blueTex-theme](https://github.com/DaYangtuo247/typora-blueTex-theme), `This is a single line code style`, ~~这是删除线效果样式~~,==这是文字高亮效果==
+这是一段正文内容样式，以下是不同文本样式效果式效果：**这是加粗文本样式**, <u>这是下划线样式</u>, *这是斜体字样式*,  [这是超链接样式：Elkeid-me/Hikari](https://github.com/Elkeid-me/Hikari), `This is a single line code style`, ~~这是删除线效果样式~~,==这是文字高亮效果==
 
 # 数学公式
 
@@ -17,7 +17,7 @@ f(x) &= \lim_{n \to \infty} \left( \sum_{k=1}^n \frac{1}{k^x} \right) + \int_0^1
          \displaystyle \begin{pmatrix}
              \cos x & -\sin x \\
              \sin x & \cos x
-         \end{pmatrix} \cdot 
+         \end{pmatrix} \cdot
          \begin{pmatrix}
              x \\
              y
@@ -171,6 +171,7 @@ gantt
 ### 三级标题3
 
 #### 四级标题4
+
 ##### 五级标题5
 
 ###### 六级标题6

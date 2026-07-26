@@ -7,3 +7,5 @@ Hikari是一个Typora主题。其Markdown部分基本继承了[blueTex](https://
 3. Hikari启用了 `text-auto-space` CSS属性。
 
 而Hikari的UI部分受到[Alto](https://github.com/Seeridia/typora-theme-alto)的启发。特别地，Hikari使用了超椭圆圆角。
+
+目前，Hikari暂无深色模式适配；当前代码库不包含字体文件。我们将在深色模式适配完成后发布Hikari。
