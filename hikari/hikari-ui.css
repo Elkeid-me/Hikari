@@ -1,0 +1,362 @@
+/* ------------------- */
+/* ---- Typora UI ---- */
+/* ------------------- */
+
+/* 对话框 */
+.modal-content {
+    /* 超椭圆圆角 */
+    corner-shape: squircle;
+    border-radius: 24px;
+}
+
+/* 对话框按钮 */
+.md-notification button,
+.modal-dialog .btn,
+.modal-dialog button {
+    corner-shape: squircle;
+    border-radius: 16px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    outline: none;
+}
+
+/* 令按钮按下时没有轮廓 */
+.md-notification button:focus,
+.modal-dialog .btn:focus,
+.modal-dialog button:focus {
+    outline: none;
+}
+
+/* Primary 按钮之背景色 */
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary {
+    background-color: var(--darker-button-accent-bg-color);
+}
+
+.md-notification button:not(.btn-primary):hover,
+.modal-dialog .btn:not(.btn-primary):hover,
+.modal-dialog button:not(.btn-primary):hover {
+    background: #dfdfdf;
+}
+
+
+/* Mega Menu */
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color);
+}
+
+.megamenu-menu-header {
+    border-bottom: none;
+    /* border-bottom: 1px solid var(--accent-color); */
+}
+
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+
+.megamenu-menu {
+    background: var(--button-accent-bg-color);
+    color: var(--text-color);
+    box-shadow: none;
+}
+
+/* 返回按钮 */
+#megamenu-back-btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ion-android-arrow-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ion-android-arrow-back::before {
+    content: "";
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.701H427v-42.75z'%3E%3C/path%3E%3C/svg%3E");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--text-color);
+    width: 24px;
+    height: 24px;
+}
+
+/* Mega Menu 面板，添加分割线 */
+.megamenu-menu-panel {
+    margin-top: 0px !important;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.megamenu-menu-panel.megamenu-menu-content-section {
+    margin-bottom: 0px;
+}
+
+.megamenu-menu-panel:has([data-localize="Recent Documents"]),
+.megamenu-menu-panel:has([data-localize="Image"]),
+.megamenu-menu-panel:has([data-localize="Open Theme Folder"]),
+.megamenu-menu-panel:has([data-localize="Contact"]) {
+    border-bottom: none;
+}
+
+.long-btn {
+    corner-shape: squircle;
+    border-radius: 20px;
+    width: 305px;
+}
+
+.megamenu-menu-list li a:hover {
+    font-weight: bold;
+    border-left: var(--light-gray) solid 3px;
+}
+
+.megamenu-menu-list li a {
+    border-left: var(--button-accent-bg-color) solid 3px;
+    background-color: var(--button-accent-bg-color) !important;
+    margin-left: 5px;
+}
+
+.megamenu-menu-list li a.active {
+    font-weight: bold;
+    border-left: var(--accent-color) solid 3px;
+}
+
+/* 最近打开的文件、“帮助”与“联系我们” */
+#recent-document-table,
+.megamenu-menu-content-section table {
+    padding: 0 !important;
+    border: 1px solid var(--line-color) !important;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: var(--bg-color);
+}
+
+/* 最近文件搜索输入框 */
+input#recent-file-panel-search-input {
+    border-radius: 8px;
+}
+
+#recent-file-panel-action-btn {
+    border-radius: 8px;
+}
+
+.md-hr:focus {
+    outline: none;
+}
+
+/* 侧边栏 */
+#typora-sidebar {
+    background-color: #FAFAFA;
+}
+
+/* 侧边栏大纲项字体 */
+.outline-label {
+    font-family: var(--font-main) !important;
+}
+
+/* 大纲项，鼠标悬浮时不应有下划线 */
+.outline-label:hover {
+    text-decoration: none;
+}
+
+/* 大纲层级缩进，相对于 Typora 默认各添加 0.25em */
+.outline-h1>.outline-item {
+    padding-left: 0.25em;
+}
+
+.outline-h2>.outline-item {
+    padding-left: 1.25em;
+}
+
+.outline-h3>.outline-item {
+    padding-left: 2.25em;
+}
+
+.outline-h4>.outline-item {
+    padding-left: 3.25em;
+}
+
+.outline-h5>.outline-item {
+    padding-left: 4.25em;
+}
+
+.outline-h6>.outline-item {
+    padding-left: 5.25em;
+}
+
+/* 大纲项右侧固定 0.25em */
+.outline-item {
+    padding-right: 0.25em;
+}
+
+.outline-content li,
+.outline-content ul {
+    margin-top: 2px;
+}
+
+.outline-item.outline-item-active {
+    background-color: var(--item-hover-bg-color);
+    border-radius: 4px;
+}
+
+.outline-item.outline-item-active span::before {
+    color: var(--accent-color);
+}
+
+.outline-item:hover {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 4px;
+    background-color: var(--item-hover-bg-color);
+}
+
+/* 侧边栏文件搜索输入框 */
+#file-library-search-input {
+    border-radius: 6px;
+}
+
+/* 查找/替换输入框 */
+#md-searchpanel input {
+    border-radius: 6px;
+}
+
+/* 查找/替换按钮 */
+#md-searchpanel .btn {
+    border-radius: 6px;
+    text-align: center;
+}
+
+#close-outline-filter-btn {
+    position: relative;
+    right: 0;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+
+/* 代码块光标 */
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--accent-color);
+    z-index: 3;
+}
+
+/* 代码块选中文本的背景色 */
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+    background-color: var(--code-selected-bg-color) !important;
+}
+
+/* “关于”页“许可证信息”按钮 */
+#about-content-license-button {
+    corner-shape: squircle;
+    border-radius: 16px;
+    border: 1px solid #00000004;
+    background: #00000008;
+    outline: none;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#about-content-license-button:hover {
+    background: #00000015;
+}
+
+/* “关于”页版本号的字体 */
+.about-content-meta {
+    font-family: var(--font-main) !important;
+}
+
+/* 偏好设置 */
+.ty-preferences table {
+    border-radius: 0px;
+}
+
+.ty-preferences .btn-split-left {
+    border-radius: 16px 0px 0px 16px !important;
+}
+
+.ty-preferences .btn-split-right {
+    border-radius: 0px 16px 16px 0px !important;
+    border-left: 1px solid var(--darker-button-accent-bg-color) !important;
+}
+
+.ty-preferences .btn {
+    border-radius: 16px;
+    corner-shape: squircle;
+    border: none;
+    background-color: var(--button-accent-bg-color);
+    height: 30px;
+}
+
+.ty-preferences select,
+.ty-preferences input {
+    border-radius: 4px;
+    border: 1px solid var(--light-gray);
+}
+
+.ty-preferences input {
+    font-family: var(--font-monospace);
+}
+
+.ty-preferences pre {
+    font-family: var(--font-monospace);
+}
+
+/* 右键菜单 */
+.context-menu {
+    border-radius: 25px;
+    corner-shape: squircle;
+    backdrop-filter: blur(7px);
+    background-color: rgb(from var(--bg-color) R G B / 0.3);
+    overflow: hidden;
+}
+
+/* 代码块提示框 */
+.md-fences .code-tooltip {
+    box-shadow: none;
+    z-index: 50;
+    right: 0 !important;
+    /* bottom: -28px !important; */
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+    background-color: #F6F8FA;
+    font-family: var(--font-monospace);
+}
+
+.md-fences .code-tooltip span {
+    margin: 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#ty-auto-suggest {
+    font-family: var(--font-monospace);
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
