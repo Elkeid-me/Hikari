@@ -39,6 +39,7 @@
     --code-selected-bg-color: #d9dfe4;
 }
 
+/* Serif Italic */
 @font-face {
     font-family: "serif-font-en";
     font-style: italic;
@@ -57,16 +58,19 @@
     font-family: "serif-font-cn";
     font-style: italic;
     font-weight: normal;
-    src: url("Fangzheng-KaiTi.ttf");
+    /* 方正楷体 */
+    src: local("FZKai-Z03S");
 }
 
 @font-face {
     font-family: "serif-font-cn";
     font-style: italic;
     font-weight: bold;
-    src: url("Fangzheng-CuKai.ttf");
+    /* 方正粗楷 */
+    src: local("FZCuKaiS-R-GB");
 }
 
+/* Serif Roman */
 @font-face {
     font-family: "serif-font-en";
     font-weight: normal;
@@ -91,6 +95,7 @@
     src: local("Source Han Serif SC Bold");
 }
 
+/* Sans-serif Italic */
 @font-face {
     font-family: "sans-font-en";
     font-style: italic;
@@ -119,6 +124,7 @@
     src: local("Sarasa Gothic SC Bold Italic");
 }
 
+/* Sans-serif Roman */
 @font-face {
     font-family: "sans-font-en";
     font-weight: normal;
@@ -143,6 +149,7 @@
     src: local("Source Han Sans SC Bold");
 }
 
+/* Monospace Roman */
 @font-face {
     font-family: "monospace-font-en";
     font-weight: normal;
@@ -153,6 +160,26 @@
     font-family: "monospace-font-en";
     font-weight: bold;
     src: local("JetBrainsMono NF Bold");
+}
+
+@font-face {
+    font-family: "monospace-font-en";
+    font-style: italic;
+    font-weight: normal;
+    src: local("JetBrainsMono NF Italic");
+}
+
+@font-face {
+    font-family: "monospace-font-en";
+    font-style: italic;
+    font-weight: bold;
+    src: local("JetBrainsMono NF Bold Italic");
+}
+
+/* Math */
+@font-face {
+    font-family: "math-font";
+    src: local("STIX Two Math Regular");
 }
 
 html body {
@@ -218,6 +245,7 @@ code {
     color: var(--code-color);
     background-color: var(--code-bg-color);
     border: 1px solid var(--code-border-color);
+    text-autospace: no-autospace;
 }
 
 /* 高亮 */
@@ -581,6 +609,10 @@ th.typora-on-moving {
     padding-left: 12px;
 }
 
+#write .CodeMirror-line {
+    text-autospace: no-autospace;
+}
+
 /* 公式与流程图的中文字体 */
 mjx-container svg text {
     font-family: var(--font-main) !important;
@@ -601,7 +633,7 @@ mjx-container svg text {
 
 /* MathML 公式字体（Mermaid） */
 math {
-    font-family: "STIX Two Math", "Cambria Math", math !important;
+    font-family: "math-font";
 }
 
 /* 内联公式输入时字体 */

@@ -110,6 +110,7 @@
 .long-btn {
     corner-shape: squircle;
     border-radius: 20px;
+    border: 1px solid var(--light-gray);
     width: 305px;
 }
 
@@ -140,13 +141,16 @@
     background-color: var(--bg-color);
 }
 
-/* 最近文件搜索输入框 */
+/* 最近文件搜索输入框与操作按钮 */
 input#recent-file-panel-search-input {
     border-radius: 8px;
+    border: 1px solid var(--light-gray);
 }
 
 #recent-file-panel-action-btn {
     border-radius: 8px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--light-gray);
 }
 
 .md-hr:focus {
@@ -293,7 +297,8 @@ input#recent-file-panel-search-input {
 }
 
 .ty-preferences .btn {
-    border-radius: 16px;
+    color: var(--text-color);
+    border-radius: 13px;
     corner-shape: squircle;
     border: none;
     background-color: var(--button-accent-bg-color);
@@ -306,12 +311,48 @@ input#recent-file-panel-search-input {
     border: 1px solid var(--light-gray);
 }
 
-.ty-preferences input {
+.ty-preferences input[type="text"]:focus {
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid var(--accent-color);
+}
+
+.ty-preferences input.search-input {
+    border-radius: 13px;
+    corner-shape: squircle;
+    border: 1px solid var(--light-gray);
+}
+
+.ty-preferences input.search-input:focus {
+    border-radius: 13px;
+    corner-shape: squircle;
+    box-shadow: none;
+    border: 1px solid var(--accent-color);
+}
+
+.input-autocomplete {
+    border: 1px solid var(--light-gray);
+    box-shadow: none !important;
+    overflow: hidden;
+}
+
+.input-autocomplete-row {
+    color: var(--text-color) !important;
+    font-family: var(--font-monospace) !important;
+}
+
+.ty-preferences input,
+.ty-preferences pre {
     font-family: var(--font-monospace);
 }
 
-.ty-preferences pre {
-    font-family: var(--font-monospace);
+.ty-preferences .nav-group-item {
+    border-radius: 13px;
+    corner-shape: squircle;
+}
+
+.ty-preferences .nav-group-item.active {
+    background-color: var(--button-accent-bg-color);
 }
 
 /* 右键菜单 */
