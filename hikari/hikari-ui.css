@@ -29,7 +29,7 @@
 .modal-dialog button {
     corner-shape: squircle;
     border-radius: 16px;
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: background 0.1s ease-in-out;
     outline: none;
 }
 
