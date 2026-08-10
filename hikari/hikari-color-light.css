@@ -1,0 +1,51 @@
+:root {
+    --bg-color: white;
+    --menu-accent-color: #e6e6e6;
+
+    --side-bar-bg-color: var(--bg-color);
+
+    /* HSL 208, 90, 54 */
+    --accent-color: #2196f3;
+
+    --light-gray: #bbbbbb;
+
+    /* 较“浅”的强调色，用于 Mega Menu 背景和按钮背景 */
+    /* HSL 208, 90, 96 */
+    --light-accent-color: #ebf5fe;
+
+    /* 较“深”的强调色，用于按钮背景和按钮悬停背景 */
+    /* HSL 208, 90, 40 */
+    --dark-accent-color: #0a6cc2;
+
+    /* Frontmatter 元数据文本颜色 */
+    --meta-text-color: #777;
+
+    --text-color: black;
+
+    --code-color: #e96900;
+    --code-border-color: rgb(from var(--code-color) r g b / 0.1);
+
+    --highlight-bg-color: #fffd38;
+    --highlight-text-color: black;
+
+    --delete-color: #34495e8f;
+    /* --delete-bg-color: ; */
+    --delete-line-color: red;
+
+    /* 分割线、表格边框、代码块边框、图表边框颜色 */
+    /* HSL 208, 90, 91 */
+    --line-color: #d3e9fd;
+
+    /* 代码块、流程图、表格偶数行的背景色 */
+    /* 同时也是行内代码、Frontmatter 的背景色 */
+    --diagram-bg-color: #f6f8fa;
+
+    /* 表头背景色 */
+    /* HSL 208, 90, 97 */
+    --thead-bg-color: #f0f8fe;
+
+    /* 代码块选中文本背景色 */
+    --code-selected-bg-color: #d9dfe4;
+
+    --md-lang-color: #b4654d;
+}

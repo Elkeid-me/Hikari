@@ -1,187 +1,3 @@
-:root {
-    --bg-color: white;
-
-    --side-bar-bg-color: #fff;
-    --accent-color: #2196f3;
-    --light-gray: #aeaeae;
-
-    --button-accent-bg-color: #e8f4ff;
-    --darker-button-accent-bg-color: #3071a9;
-
-    /* Frontmatter 元数据文本和背景颜色 */
-    --meta-text-color: #777;
-    --meta-bg-color: #f7f7f7;
-
-    --text-color: black;
-
-    --code-color: #e96900;
-    --code-bg-color: #f8f8f8;
-    --code-border-color: rgb(from var(--code-color) r g b / 0.1);
-
-    --highlight-bg-color: #fffd38;
-
-    --delete-color: #34495e8f;
-    /* --delete-bg-color: ; */
-    --delete-line-color: red;
-
-    --heading-decoration-color: #bfbfbf;
-
-    /* 分割线、表格边框、代码块边框、图表边框颜色 */
-    --line-color: #d3e4ff;
-
-    /* 代码块、流程图、表格偶数行的背景色 */
-    --diagram-bg-color: #f6f8fa;
-
-    /* 表头背景色 */
-    --thead-bg-color: #f0f6ff;
-
-    /* 代码块选中文本背景色 */
-    --code-selected-bg-color: #d9dfe4;
-}
-
-/* Serif Italic */
-@font-face {
-    font-family: "serif-font-en";
-    font-style: italic;
-    font-weight: normal;
-    src: local("STIX Two Text Italic");
-}
-
-@font-face {
-    font-family: "serif-font-en";
-    font-style: italic;
-    font-weight: bold;
-    src: local("STIX Two Text Bold Italic");
-}
-
-@font-face {
-    font-family: "serif-font-cn";
-    font-style: italic;
-    font-weight: normal;
-    /* 方正楷体 */
-    src: local("FZKai-Z03S");
-}
-
-@font-face {
-    font-family: "serif-font-cn";
-    font-style: italic;
-    font-weight: bold;
-    /* 方正粗楷 */
-    src: local("FZCuKaiS-R-GB");
-}
-
-/* Serif Roman */
-@font-face {
-    font-family: "serif-font-en";
-    font-weight: normal;
-    src: local("STIX Two Text Regular");
-}
-
-@font-face {
-    font-family: "serif-font-en";
-    font-weight: bold;
-    src: local("STIX Two Text Bold");
-}
-
-@font-face {
-    font-family: "serif-font-cn";
-    font-weight: normal;
-    src: local("Source Han Serif SC");
-}
-
-@font-face {
-    font-family: "serif-font-cn";
-    font-weight: bold;
-    src: local("Source Han Serif SC Bold");
-}
-
-/* Sans-serif Italic */
-@font-face {
-    font-family: "sans-font-en";
-    font-style: italic;
-    font-weight: normal;
-    src: local("Inter Italic");
-}
-
-@font-face {
-    font-family: "sans-font-en";
-    font-style: italic;
-    font-weight: bold;
-    src: local("Inter Bold Italic");
-}
-
-@font-face {
-    font-family: "sans-font-cn";
-    font-style: italic;
-    font-weight: normal;
-    src: local("Sarasa Gothic SC Italic");
-}
-
-@font-face {
-    font-family: "sans-font-cn";
-    font-style: italic;
-    font-weight: bold;
-    src: local("Sarasa Gothic SC Bold Italic");
-}
-
-/* Sans-serif Roman */
-@font-face {
-    font-family: "sans-font-en";
-    font-weight: normal;
-    src: local("Inter Regular");
-}
-
-@font-face {
-    font-family: "sans-font-en";
-    font-weight: bold;
-    src: local("Inter Bold");
-}
-
-@font-face {
-    font-family: "sans-font-cn";
-    font-weight: normal;
-    src: local("Source Han Sans SC");
-}
-
-@font-face {
-    font-family: "sans-font-cn";
-    font-weight: bold;
-    src: local("Source Han Sans SC Bold");
-}
-
-/* Monospace Roman */
-@font-face {
-    font-family: "monospace-font-en";
-    font-weight: normal;
-    src: local("JetBrainsMono NF Regular");
-}
-
-@font-face {
-    font-family: "monospace-font-en";
-    font-weight: bold;
-    src: local("JetBrainsMono NF Bold");
-}
-
-@font-face {
-    font-family: "monospace-font-en";
-    font-style: italic;
-    font-weight: normal;
-    src: local("JetBrainsMono NF Italic");
-}
-
-@font-face {
-    font-family: "monospace-font-en";
-    font-style: italic;
-    font-weight: bold;
-    src: local("JetBrainsMono NF Bold Italic");
-}
-
-/* Math */
-@font-face {
-    font-family: "math-font";
-    src: local("STIX Two Math Regular");
-}
-
 html body {
     background-color: var(--bg-color);
     font-family: var(--font-main);
@@ -243,7 +59,7 @@ code {
     font-family: var(--font-monospace) !important;
     font-size: 0.92rem;
     color: var(--code-color);
-    background-color: var(--code-bg-color);
+    background-color: var(--diagram-bg-color);
     border: 1px solid var(--code-border-color);
     text-autospace: no-autospace;
 }
@@ -254,7 +70,7 @@ mark {
     border-radius: 0.3em;
     padding: 2px 6px;
     margin: 0 2px;
-    color: var(--text-color);
+    color: var(--highlight-text-color);
     font-weight: bold;
 }
 
@@ -267,7 +83,7 @@ del {
 
 /* 脚注 */
 sup.md-footnote {
-    background-color: var(--code-bg-color);
+    background-color: var(--diagram-bg-color);
     color: var(--code-color);
 }
 
@@ -398,7 +214,7 @@ h6 {
 #write h4:after,
 #write h5:after,
 #write h6:after {
-    color: var(--heading-decoration-color);
+    color: var(--light-gray);
     border: 1px solid;
     border-radius: 4px;
     position: absolute;
@@ -722,7 +538,7 @@ math {
 }
 
 .cm-s-inner .cm-error {
-    color: rgba(255, 255, 255, 1) !important;
+    color: #ffffff !important;
     background-color: #b9218e40 !important;
 }
 
@@ -736,7 +552,7 @@ math {
     padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
-    background-color: var(--meta-bg-color);
+    background-color: var(--diagram-bg-color);
     border: 0;
     border-radius: 8px;
     color: var(--meta-text-color);
@@ -814,8 +630,11 @@ math {
     background-color: var(--side-bar-bg-color);
 }
 
+/* 代码块语言标签 */
+/* 例如 ```C++ 中的“C++” */
 .md-lang {
-    color: #b4654d;
+    color: var(--md-lang-color);
+    font-family: var(--font-monospace);
 }
 
 .pin-outline #outline-content .outline-active strong,

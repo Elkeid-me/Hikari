@@ -1,0 +1,15 @@
+@import url("hikari/hikari-base.css");
+@import url("hikari/hikari-color-dark.css");
+@import url("hikari/hikari-fonts.css");
+@import url("hikari/hikari-ui.css");
+
+:root {
+    --font-main: "sans-font-en", "sans-font-cn";
+    --font-monospace: "monospace-font-en", "sans-font-cn";
+    --mermaid-font-family: "sans-font-en", "sans-font-cn";
+}
+
+/* OpenType feature settings for Inter. `ss03` is Round quotes and commas, `cv01` is alternate one. */
+#write {
+    font-feature-settings: "ss03" 1, "cv01" 1;
+}

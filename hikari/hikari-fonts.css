@@ -1,0 +1,142 @@
+/* Serif Italic */
+@font-face {
+    font-family: "serif-font-en";
+    font-style: italic;
+    font-weight: normal;
+    src: local("STIX Two Text Italic");
+}
+
+@font-face {
+    font-family: "serif-font-en";
+    font-style: italic;
+    font-weight: bold;
+    src: local("STIX Two Text Bold Italic");
+}
+
+@font-face {
+    font-family: "serif-font-cn";
+    font-style: italic;
+    font-weight: normal;
+    /* 方正楷体 */
+    src: local("FZKai-Z03S");
+}
+
+@font-face {
+    font-family: "serif-font-cn";
+    font-style: italic;
+    font-weight: bold;
+    /* 方正粗楷 */
+    src: local("FZCuKaiS-R-GB");
+}
+
+/* Serif Roman */
+@font-face {
+    font-family: "serif-font-en";
+    font-weight: normal;
+    src: local("STIX Two Text Regular");
+}
+
+@font-face {
+    font-family: "serif-font-en";
+    font-weight: bold;
+    src: local("STIX Two Text Bold");
+}
+
+@font-face {
+    font-family: "serif-font-cn";
+    font-weight: normal;
+    src: local("Source Han Serif SC");
+}
+
+@font-face {
+    font-family: "serif-font-cn";
+    font-weight: bold;
+    src: local("Source Han Serif SC Bold");
+}
+
+/* Sans-serif Italic */
+@font-face {
+    font-family: "sans-font-en";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Inter Italic");
+}
+
+@font-face {
+    font-family: "sans-font-en";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Inter Bold Italic");
+}
+
+@font-face {
+    font-family: "sans-font-cn";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Sarasa Gothic SC Italic");
+}
+
+@font-face {
+    font-family: "sans-font-cn";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Sarasa Gothic SC Bold Italic");
+}
+
+/* Sans-serif Roman */
+@font-face {
+    font-family: "sans-font-en";
+    font-weight: normal;
+    src: local("Inter Regular");
+}
+
+@font-face {
+    font-family: "sans-font-en";
+    font-weight: bold;
+    src: local("Inter Bold");
+}
+
+@font-face {
+    font-family: "sans-font-cn";
+    font-weight: normal;
+    src: local("Source Han Sans SC");
+}
+
+@font-face {
+    font-family: "sans-font-cn";
+    font-weight: bold;
+    src: local("Source Han Sans SC Bold");
+}
+
+/* Monospace Roman */
+@font-face {
+    font-family: "monospace-font-en";
+    font-weight: normal;
+    src: local("JetBrainsMono NF Regular");
+}
+
+@font-face {
+    font-family: "monospace-font-en";
+    font-weight: bold;
+    src: local("JetBrainsMono NF Bold");
+}
+
+@font-face {
+    font-family: "monospace-font-en";
+    font-style: italic;
+    font-weight: normal;
+    src: local("JetBrainsMono NF Italic");
+}
+
+@font-face {
+    font-family: "monospace-font-en";
+    font-style: italic;
+    font-weight: bold;
+    src: local("JetBrainsMono NF Bold Italic");
+}
+
+/* Math */
+@font-face {
+    font-family: "math-font";
+    src: local("STIX Two Math Regular");
+}

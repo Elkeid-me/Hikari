@@ -1,0 +1,10 @@
+@import url("hikari/hikari-base.css");
+@import url("hikari/hikari-color-dark.css");
+@import url("hikari/hikari-fonts.css");
+@import url("hikari/hikari-ui.css");
+
+:root {
+    --font-main: "serif-font-en", "serif-font-cn";
+    --font-monospace: "monospace-font-en", "sans-font-cn";
+    --mermaid-font-family: "serif-font-en", "serif-font-cn";
+}
