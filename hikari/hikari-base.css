@@ -52,16 +52,26 @@ p {
     width: 100%;
 }
 
-/* 行内代码 */
+/* 行内代码，键盘快捷键，标签 */
+code, kbd, span[md-inline="tag"] {
+    font-family: var(--font-monospace);
+    text-autospace: no-autospace;
+}
+
 code {
     padding: 2px 6px;
     border-radius: 0.3em;
-    font-family: var(--font-monospace) !important;
     font-size: 0.92rem;
     color: var(--code-color);
     background-color: var(--diagram-bg-color);
     border: 1px solid var(--code-border-color);
-    text-autospace: no-autospace;
+}
+
+kbd {
+    border-radius: 0.3em;
+    color: var(--text-color);
+    background-color: var(--diagram-bg-color);
+    border: 1px solid var(--menu-accent-color);
 }
 
 /* 高亮 */
