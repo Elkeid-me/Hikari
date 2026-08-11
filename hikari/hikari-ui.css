@@ -16,6 +16,11 @@
     background: rgba(179, 179, 179, 0.425);
 }
 
+.ty-tooltip {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
 /* 对话框 */
 .modal-content {
     /* 超椭圆圆角 */
@@ -104,6 +109,10 @@
     padding-top: 30px;
 }
 
+.megamenu-menu {
+    transition: all 0.3s;
+}
+
 .megamenu-menu-panel.megamenu-menu-content-section {
     margin-bottom: 0px;
 }
@@ -133,6 +142,7 @@
 }
 
 .megamenu-menu-list li a {
+    transition: all 0.3s;
     border-left: var(--light-accent-color) solid 3px;
     background-color: var(--light-accent-color) !important;
     margin-left: 5px;
@@ -214,6 +224,13 @@ input#recent-file-panel-search-input {
     background-color: var(--side-bar-bg-color);
 }
 
+#typora-sidebar-resizer:not(.dragging) .typora-sidebar-resizer-bar:hover {
+    background: var(--accent-color);
+    opacity: 0.8;
+    width: 3px;
+    transition: all 0.25s
+}
+
 /* 侧边栏大纲项字体 */
 .outline-label {
     font-family: var(--font-main) !important;
@@ -260,7 +277,7 @@ input#recent-file-panel-search-input {
 }
 
 .outline-item.outline-item-active {
-    background-color: var(--item-hover-bg-color);
+    background-color: var(--menu-accent-color);
     border-radius: 4px;
 }
 
@@ -274,12 +291,46 @@ input#recent-file-panel-search-input {
     border-left: 0px;
     border-right: 0px;
     border-radius: 4px;
-    background-color: var(--item-hover-bg-color);
+    background-color: var(--menu-accent-color);
 }
 
-/* 侧边栏文件搜索输入框 */
+/* 侧边栏搜索框之框架 */
+.ty-sidebar-search-panel {
+    border-bottom: 1px solid var(--menu-accent-color);
+}
+
+/* 侧边栏搜索框 */
 #file-library-search-input {
     border-radius: 6px;
+}
+
+/* 侧边栏搜索框之按钮 */
+.ty-sidebar-search-panel .searchpanel-search-option-btn.select,
+.ty-sidebar-search-panel .searchpanel-search-option-btn:hover {
+    background-color: var(--menu-accent-color);
+}
+
+/* 侧边栏底部 */
+.sidebar-footer {
+    border-top: 1px solid var(--menu-accent-color);
+}
+
+#sidebar-files-menu>li>a:hover {
+    background-color: var(--menu-accent-color);
+}
+
+/* 侧边栏文件菜单，平移 */
+/* 菜单样式跟随 context-menu */
+#sidebar-files-menu.dropdown-menu {
+    transform: translateY(-30px);
+}
+
+.file-tree-node.active>.file-node-background {
+    background-color: var(--menu-accent-color);
+}
+
+.sidebar-footer-item:hover {
+    background-color: var(--menu-accent-color);
 }
 
 /* 查找/替换输入框 */
@@ -388,6 +439,12 @@ input#recent-file-panel-search-input {
     border: 1px solid var(--accent-color);
 }
 
+.ty-preferences .export-detail,
+.ty-preferences .export-item.active,
+.ty-preferences .export-items-list-control {
+    background-color: var(--menu-accent-color);
+}
+
 .input-autocomplete {
     border: 1px solid var(--light-gray);
     box-shadow: none !important;
@@ -418,8 +475,12 @@ input#recent-file-panel-search-input {
 }
 
 /* 菜单 */
-:is(.context-menu.dropdown-menu, #spell-check-panel, #footer-word-count-info) {
-    border-radius: 25px;
+:is(#sidebar-files-menu.dropdown-menu,
+    .context-menu.dropdown-menu,
+    #spell-check-panel,
+    #footer-word-count-info) {
+    border: 1px solid var(--menu-accent-color);
+    border-radius: 20px;
     corner-shape: squircle;
     backdrop-filter: blur(7px);
     background-color: rgb(from var(--bg-color) r g b / 0.3);
@@ -431,7 +492,7 @@ input#recent-file-panel-search-input {
 .context-menu.dropdown-menu>li>a:hover,
 #spell-check-panel .ty-spell-check-panel-item:hover,
 #spell-check-panel .ty-spell-check-panel-item.ty-active,
-#footer-word-count-info tr:hover,
+#footer-word-count-info .ty-footer-word-count-all table tr:hover,
 .menu-item-container a.menu-style-btn.active,
 .menu-item-container a.menu-style-btn:hover {
     background-color: var(--menu-accent-color) !important;
@@ -441,9 +502,19 @@ input#recent-file-panel-search-input {
     font-family: var(--font-monospace);
 }
 
+.context-menu .state-on:before,
+.ty-checked .ty-spell-check-panel-item-status:before,
+.fa.fa-check-circle-o:before {
+    content: "✓";
+    font-family: "sans-font-en";
+}
+
 /* 菜单分割线 */
-:is(.context-menu.dropdown-menu, #spell-check-panel, #footer-word-count-info) .divider {
+:is(.context-menu.dropdown-menu,
+    #spell-check-panel,
+    #footer-word-count-info) .divider {
     margin: 4px 8px;
+    border-top: 1px solid var(--menu-accent-color);
 }
 
 /* 代码块提示框 */

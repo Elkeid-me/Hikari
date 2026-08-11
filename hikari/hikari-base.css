@@ -371,7 +371,7 @@ table tr td {
     border-top: 1px solid var(--line-color);
 }
 
-table tr :is(th, td):not(:first-child) {
+table tr :is(th, td):not(:first-child, .md-reset) {
     border-left: 1px solid var(--line-color);
 }
 
