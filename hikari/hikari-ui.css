@@ -50,6 +50,12 @@
     background-color: var(--dark-accent-color);
 }
 
+.md-notification button:not(.btn-primary),
+.modal-dialog .btn:not(.btn-primary),
+.modal-dialog button:not(.btn-primary) {
+    background: var(--light-accent-color);
+}
+
 .md-notification button:not(.btn-primary):hover,
 .modal-dialog .btn:not(.btn-primary):hover,
 .modal-dialog button:not(.btn-primary):hover {
