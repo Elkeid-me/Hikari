@@ -45,8 +45,73 @@
     /* HSL 208, 90, 97 */
     --thead-bg-color: #063f6b;
 
-    /* 代码块选中文本背景色 */
-    --code-selected-bg-color: #d9dfe4;
-
     --md-lang-color: #b4654d;
+
+    /* 覆盖默认的文本选中背景色 */
+    --select-text-bg-color: var(--light-gray) !important;
+}
+
+.cm-s-inner .cm-operator {
+    color: #d4d4d4 !important;
+}
+
+.cm-s-inner .cm-builtin,
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-variable-3 {
+    color: #4ec9b0 !important;
+}
+
+.cm-s-inner .cm-comment {
+    color: #8b949e !important;
+}
+
+.cm-s-inner .cm-meta {
+    color: #c586c0 !important;
+}
+
+.cm-s-inner .cm-atom {
+    color: #569cd6 !important;
+}
+
+.cm-s-inner .cm-number {
+    color: #b5cea8 !important;
+}
+
+.cm-s-inner .cm-def {
+    color: #d2a8ff !important;
+}
+
+.cm-s-inner .cm-string,
+.cm-s-inner .cm-variable-2 {
+    color: #a5d6ff !important;
+}
+
+.cm-s-inner .cm-keyword {
+    color: #ff7b72 !important;
+}
+
+.cm-s-inner .cm-property,
+.cm-s-inner .cm-attribute {
+    color: #9cdcfe !important;
+}
+
+.cm-s-inner .cm-tag {
+    color: #7ee787 !important;
+}
+
+.cm-s-inner .cm-qualifier,
+.cm-s-inner .cm-tag.cm-bracket {
+    color: #808080 !important;
+}
+
+.cm-s-inner .cm-em {
+    color: #c9d1d9 !important;
+}
+
+.cm-s-inner .cm-header {
+    color: #79c0ff !important;
+}
+
+.cm-s-inner .cm-quote {
+    color: #ffa657 !important;
 }

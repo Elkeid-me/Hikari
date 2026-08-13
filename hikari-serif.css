@@ -1,6 +1,7 @@
 @import url("hikari/hikari-base.css");
 @import url("hikari/hikari-color-light.css");
 @import url("hikari/hikari-fonts.css");
+@import url("hikari/hikari-source-mode.css");
 @import url("hikari/hikari-ui.css");
 
 :root {

@@ -53,7 +53,9 @@ p {
 }
 
 /* 行内代码，键盘快捷键，标签 */
-code, kbd, span[md-inline="tag"] {
+code,
+kbd,
+span[md-inline="tag"] {
     font-family: var(--font-monospace);
     text-autospace: no-autospace;
 }
@@ -444,6 +446,10 @@ mjx-container svg text {
     font-family: var(--font-main) !important;
 }
 
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+
 .md-diagram-panel-preview svg {
     font-family: var(--font-main) !important;
 }
@@ -490,20 +496,21 @@ math {
 
 /* 专门给公式块的 */
 .md-rawblock-control:not(.md-rawblock-tooltip) {
-    background-color: var(--bg-color);
+    background-color: var(--diagram-bg-color);
 }
 
 .mathjax-block:hover .md-rawblock-container {
     background-color: var(--menu-accent-color);
 }
 
-.md-mathblock-input .CodeMirror {
+.md-mathblock-panel.md-rawblock-panel {
     border: 1px solid var(--line-color);
     background-color: var(--diagram-bg-color) !important;
     border-radius: 8px;
+    overflow: hidden;
 }
 
-.mathjax-block>.code-tooltip {
+.mathjax-block .code-tooltip {
     bottom: 0.375em;
     box-shadow: none;
 }
@@ -514,60 +521,12 @@ math {
     padding: 0em 0.4em;
 }
 
-.cm-s-inner .cm-keyword {
-    color: #1694b6 !important;
-}
-
-.cm-s-inner .cm-operator {
-    color: #2f86d2 !important;
-}
-
-.cm-s-inner .cm-variable,
-.cm-s-inner .cm-builtin,
-.cm-s-inner .cm-header,
-.cm-s-inner .cm-tag,
-.cm-s-inner .cm-property,
-.cm-s-inner .cm-quote {
-    color: #b9218e !important;
-}
-
-.cm-s-inner .cm-variable-2 {
-    color: #7aadad !important;
-}
-
-.cm-s-inner .cm-variable-3,
-.cm-s-inner .cm-type,
-.cm-s-inner .cm-atom {
-    color: #378ed8 !important;
-}
-
-.cm-s-inner .cm-number {
-    color: #1a5494 !important;
-}
-
-.cm-s-inner .cm-def,
-.cm-s-inner .cm-qualifier {
-    color: #0744ac !important;
-}
-
-.cm-s-inner .cm-string {
-    color: #6f42c2 !important;
+.cm-s-inner .cm-type {
+    color: #1565c0 !important;
 }
 
 .cm-s-inner .cm-string-2 {
     color: #27638f !important;
-}
-
-.cm-s-inner .cm-comment {
-    color: #57a64a !important;
-}
-
-.cm-s-inner .cm-meta {
-    color: #0b93be !important;
-}
-
-.cm-s-inner .cm-attribute {
-    color: #8f6aa8 !important;
 }
 
 .cm-s-inner .cm-error {
@@ -644,6 +603,26 @@ math {
     width: 5px;
     height: 5px;
     border-radius: 50%;
+}
+
+.md-toc-h2 .md-toc-inner {
+    margin-left: 1em;
+}
+
+.md-toc-h3 .md-toc-inner {
+    margin-left: 2em;
+}
+
+.md-toc-h4 .md-toc-inner {
+    margin-left: 3em;
+}
+
+.md-toc-h5 .md-toc-inner {
+    margin-left: 4em;
+}
+
+.md-toc-h6 .md-toc-inner {
+    margin-left: 5em;
 }
 
 #md-notification:before {

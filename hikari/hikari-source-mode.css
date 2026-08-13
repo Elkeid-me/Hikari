@@ -1,3 +1,7 @@
-#typora-source .CodeMirror-linenumber {
+#typora-source .cm-s-typora-default .CodeMirror-linenumber,
+#typora-source .cm-s-typora-default .cm-code,
+#typora-source .cm-s-typora-default .cm-comment,
+#typora-source .cm-s-typora-default .cm-overlay,
+#typora-source .cm-s-typora-default .cm-table-row {
     font-family: var(--font-monospace);
 }

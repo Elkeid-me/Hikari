@@ -25,7 +25,7 @@
 .modal-content {
     /* 超椭圆圆角 */
     corner-shape: squircle;
-    border-radius: 24px;
+    border-radius: 20px;
 }
 
 /* 对话框按钮 */
@@ -33,7 +33,7 @@
 .modal-dialog .btn,
 .modal-dialog button {
     corner-shape: squircle;
-    border-radius: 16px;
+    border-radius: 15px;
     transition: background 0.1s ease-in-out;
     outline: none;
 }
@@ -362,20 +362,20 @@ input#recent-file-panel-search-input {
 
 /* 代码块光标 */
 .CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid var(--accent-color);
+    border-left: 1px solid var(--text-color);
     z-index: 3;
 }
 
 /* 代码块选中文本的背景色 */
 .cm-s-inner .CodeMirror-selected,
 .cm-s-inner .CodeMirror-selectedtext {
-    background-color: var(--code-selected-bg-color) !important;
+    background-color: var(--menu-accent-color) !important;
 }
 
 /* “关于”页“许可证信息”按钮 */
 #about-content-license-button {
     corner-shape: squircle;
-    border-radius: 16px;
+    border-radius: 15px;
     border: 1px solid var(--light-gray);
     outline: none;
     color: var(--text-color);
@@ -510,7 +510,8 @@ input#recent-file-panel-search-input {
 
 .context-menu .state-on:before,
 .ty-checked .ty-spell-check-panel-item-status:before,
-.fa.fa-check-circle-o:before {
+.fa.fa-check-circle-o:before,
+.md-rawblock-tooltip-ok-btn>.ion-checkmark:before {
     content: "✓";
     font-family: "sans-font-en";
 }
@@ -540,6 +541,10 @@ input#recent-file-panel-search-input {
     margin: 0;
     padding: 3px;
     border-radius: 5px;
+}
+
+.md-rawblock-tooltip-ok-btn:hover {
+    background-color: var(--menu-accent-color);
 }
 
 #ty-auto-suggest {
@@ -573,6 +578,12 @@ footer.ty-footer {
 #top-titlebar :is(#w-min, #w-restore):hover {
     background-color: var(--menu-accent-color);
     color: var(--text-color);
+}
+
+/* 表格菜单 */
+.ty-table-edit button:hover {
+    background-color: var(--menu-accent-color);
+    border: 1px solid var(--light-gray);
 }
 
 @media print {
