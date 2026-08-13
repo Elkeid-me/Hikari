@@ -17,16 +17,10 @@
     font-family: "serif-font-cn";
     font-style: italic;
     font-weight: normal;
-    src: url("./fonts/LXGWWenKaiLite-Regular.ttf") format("opentype");
+    src: url("./fonts/LXGWWenKaiGBLite-Regular.ttf") format("opentype");
 }
 
 /* 霞鹜文楷只有 Medium，没有 Bold。故直接使用伪粗体 */
-/* @font-face {
-    font-family: "serif-font-cn";
-    font-style: italic;
-    font-weight: bold; */
-    /* src: url("./fonts/LXGWWenKaiLite-Medium.ttf") format("opentype");
-} */
 
 /* Serif Roman */
 @font-face {
@@ -74,15 +68,8 @@
     font-family: "sans-font-cn";
     font-style: italic;
     font-weight: normal;
-    src: url("./fonts/LXGWWenKaiLite-Regular.ttf") format("opentype");
+    src: url("./fonts/LXGWWenKaiGBLite-Regular.ttf") format("opentype");
 }
-
-/* @font-face {
-    font-family: "sans-font-cn";
-    font-style: italic;
-    font-weight: bold;
-    src: url("./fonts/LXGWWenKaiLite-Medium.ttf") format("opentype");
-} */
 
 /* Sans-serif Roman */
 @font-face {
