@@ -5,3 +5,7 @@
 #typora-source .cm-s-typora-default .cm-table-row {
     font-family: var(--font-monospace);
 }
+
+#typora-source .cm-s-typora-default .CodeMirror-cursor {
+    border-left: 1px solid var(--text-color);
+}

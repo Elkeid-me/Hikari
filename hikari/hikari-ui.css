@@ -25,7 +25,7 @@
 .modal-content {
     /* 超椭圆圆角 */
     corner-shape: squircle;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 /* 对话框按钮 */
@@ -132,7 +132,7 @@
 
 .long-btn {
     corner-shape: squircle;
-    border-radius: 20px;
+    border-radius: 25px;
     border: 1px solid var(--light-gray);
     width: 305px;
     transition: background 0.1s ease-in-out;
@@ -307,7 +307,7 @@ input#recent-file-panel-search-input {
 
 /* 侧边栏搜索框 */
 #file-library-search-input {
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 /* 侧边栏搜索框之按钮 */
@@ -341,12 +341,12 @@ input#recent-file-panel-search-input {
 
 /* 查找/替换输入框 */
 #md-searchpanel input {
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 /* 查找/替换按钮 */
 #md-searchpanel .btn {
-    border-radius: 6px;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -375,7 +375,7 @@ input#recent-file-panel-search-input {
 /* “关于”页“许可证信息”按钮 */
 #about-content-license-button {
     corner-shape: squircle;
-    border-radius: 15px;
+    border-radius: 25px;
     border: 1px solid var(--light-gray);
     outline: none;
     color: var(--text-color);
@@ -420,12 +420,12 @@ input#recent-file-panel-search-input {
 
 .ty-preferences select,
 .ty-preferences input {
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid var(--light-gray);
 }
 
 .ty-preferences input[type="text"]:focus {
-    border-radius: 4px;
+    border-radius: 6px;
     box-shadow: none;
     border: 1px solid var(--accent-color);
 }

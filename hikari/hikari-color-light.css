@@ -114,3 +114,7 @@
 .cm-s-inner .cm-quote {
     color: #953800 !important;
 }
+
+.cm-s-inner .cm-identifier {
+    color: #795e26 !important;
+}
