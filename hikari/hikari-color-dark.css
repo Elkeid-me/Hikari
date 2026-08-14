@@ -14,9 +14,10 @@
     /* 较“浅”的强调色，用于 Mega Menu 背景和按钮背景 */
     --light-accent-color: #15181e;
 
-    /* 较“深”的强调色，用于按钮背景和按钮悬停背景 */
+    /* 较“深”的强调色，用于按钮背景 */
     /* HSL 208, 90, 40 */
     --dark-accent-color: #0a6cc2;
+    --dark-accent-color-lighter: #0b7adb;
 
     /* Frontmatter 元数据文本颜色 */
     --meta-text-color: #777;
@@ -34,7 +35,6 @@
     --delete-line-color: #a00000;
 
     /* 分割线、表格边框、代码块边框、图表边框颜色 */
-    /* HSL 208, 90, 91 */
     --line-color: #053661;
 
     /* 代码块、流程图、表格偶数行的背景色 */
@@ -42,7 +42,6 @@
     --diagram-bg-color: #121a21;
 
     /* 表头背景色 */
-    /* HSL 208, 90, 97 */
     --thead-bg-color: #063f6b;
 
     --md-lang-color: #b4654d;

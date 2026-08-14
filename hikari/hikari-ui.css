@@ -50,6 +50,11 @@
     background-color: var(--dark-accent-color);
 }
 
+/* Primary 按钮之背景色 */
+.btn-primary:hover {
+    background-color: var(--dark-accent-color-lighter);
+}
+
 .md-notification button:not(.btn-primary),
 .modal-dialog .btn:not(.btn-primary),
 .modal-dialog button:not(.btn-primary) {
@@ -123,10 +128,7 @@
     margin-bottom: 0px;
 }
 
-.megamenu-menu-panel:has([data-localize="Recent Documents"]),
-.megamenu-menu-panel:has([data-localize="Image"]),
-.megamenu-menu-panel:has([data-localize="Open Theme Folder"]),
-.megamenu-menu-panel:has([data-localize="Contact"]) {
+.megamenu-menu-panel:is(:last-child) {
     border-bottom: none;
 }
 
@@ -379,7 +381,6 @@ input#recent-file-panel-search-input {
     border: 1px solid var(--light-gray);
     outline: none;
     color: var(--text-color);
-    transition: background 0.1s ease-in-out;
 }
 
 #about-content-license-button:hover {
@@ -389,6 +390,10 @@ input#recent-file-panel-search-input {
 /* “关于”页版本号的字体 */
 .about-content-meta {
     font-family: var(--font-main) !important;
+}
+
+.ty-link {
+    color: var(--accent-color);
 }
 
 /* 偏好设置 */

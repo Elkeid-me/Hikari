@@ -13,9 +13,10 @@
     /* HSL 208, 90, 96 */
     --light-accent-color: #ebf5fe;
 
-    /* 较“深”的强调色，用于按钮背景和按钮悬停背景 */
+    /* 较“深”的强调色，用于按钮背景 */
     /* HSL 208, 90, 40 */
     --dark-accent-color: #0a6cc2;
+    --dark-accent-color-lighter: #0b7adb;
 
     /* Frontmatter 元数据文本颜色 */
     --meta-text-color: #777;
