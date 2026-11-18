@@ -232,6 +232,10 @@ input#recent-file-panel-search-input {
     background-color: var(--side-bar-bg-color);
 }
 
+#sidebar-loading-template.file-list-item {
+    background-color: var(--side-bar-bg-color);
+}
+
 #typora-sidebar-resizer:not(.dragging) .typora-sidebar-resizer-bar:hover {
     background: var(--accent-color);
     opacity: 0.8;
@@ -316,6 +320,16 @@ input#recent-file-panel-search-input {
 .ty-sidebar-search-panel .searchpanel-search-option-btn.select,
 .ty-sidebar-search-panel .searchpanel-search-option-btn:hover {
     background-color: var(--menu-accent-color);
+}
+
+
+/* 文件列表 */
+.file-list-item.file-library-node.file-library-file-node.active {
+    background-color: var(--menu-accent-color);
+}
+
+.file-list-item.file-library-node.file-library-file-node {
+    border-bottom: none;
 }
 
 /* 侧边栏底部 */

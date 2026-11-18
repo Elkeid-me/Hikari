@@ -432,6 +432,11 @@ th.typora-on-moving {
     word-wrap: normal;
 }
 
+#write .md-fences.mock-cm {
+    font-family: var(--font-monospace) !important;
+    padding: 0.8em 1.4em !important;
+}
+
 /* 代码块的缩进 */
 #write .CodeMirror-wrap .CodeMirror-code pre {
     padding-left: 12px;
