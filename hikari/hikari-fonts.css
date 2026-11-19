@@ -2,21 +2,12 @@
 @font-face {
     font-family: "serif-font-en";
     font-style: italic;
-    font-weight: normal;
-    src: url("./fonts/STIXTwoText-Italic.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "serif-font-en";
-    font-style: italic;
-    font-weight: bold;
-    src: url("./fonts/STIXTwoText-BoldItalic.otf") format("opentype");
+    src: url("./fonts/STIXTwoText-Italic[wght].ttf") format("opentype") tech(variations);
 }
 
 @font-face {
     font-family: "serif-font-cn";
     font-style: italic;
-    font-weight: normal;
     src: url("./fonts/LXGWWenKaiGBLite-Regular.ttf") format("opentype");
 }
 
@@ -25,41 +16,19 @@
 /* Serif Roman */
 @font-face {
     font-family: "serif-font-en";
-    font-weight: normal;
-    src: url("./fonts/STIXTwoText-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "serif-font-en";
-    font-weight: bold;
-    src: url("./fonts/STIXTwoText-Bold.otf") format("opentype");
+    src: url("./fonts/STIXTwoText[wght].ttf") format("opentype") tech(variations);
 }
 
 @font-face {
     font-family: "serif-font-cn";
-    font-weight: normal;
     src: url("./fonts/SourceHanSerifCN-VF.otf") format("opentype") tech(variations);
 }
 
-@font-face {
-    font-family: "serif-font-cn";
-    font-weight: bold;
-    src: url("./fonts/SourceHanSerifCN-VF.otf") format("opentype") tech(variations);
-}
 
 /* Sans-serif Italic */
 @font-face {
     font-family: "sans-font-en";
     font-style: italic;
-    font-weight: normal;
-    src: url("./fonts/InterVariable-Italic.ttf") format("opentype") tech(variations);
-    font-feature-settings: "ss03" 1, "cv01" 1;
-}
-
-@font-face {
-    font-family: "sans-font-en";
-    font-style: italic;
-    font-weight: bold;
     src: url("./fonts/InterVariable-Italic.ttf") format("opentype") tech(variations);
     font-feature-settings: "ss03" 1, "cv01" 1;
 }
@@ -67,61 +36,30 @@
 @font-face {
     font-family: "sans-font-cn";
     font-style: italic;
-    font-weight: normal;
     src: url("./fonts/LXGWWenKaiGBLite-Regular.ttf") format("opentype");
 }
 
 /* Sans-serif Roman */
 @font-face {
     font-family: "sans-font-en";
-    font-weight: normal;
-    src: url("./fonts/InterVariable.ttf") format("opentype") tech(variations);
-    font-feature-settings: "ss03" 1, "cv01" 1;
-}
-
-@font-face {
-    font-family: "sans-font-en";
-    font-weight: bold;
     src: url("./fonts/InterVariable.ttf") format("opentype") tech(variations);
     font-feature-settings: "ss03" 1, "cv01" 1;
 }
 
 @font-face {
     font-family: "sans-font-cn";
-    font-weight: normal;
     src: url("./fonts/SourceHanSansCN-VF.otf") format("opentype") tech(variations);
 }
 
-@font-face {
-    font-family: "sans-font-cn";
-    font-weight: bold;
-    src: url("./fonts/SourceHanSansCN-VF.otf") format("opentype") tech(variations);
-}
-
-/* Monospace Roman */
+/* Monospace */
 @font-face {
     font-family: "monospace-font-en";
-    font-weight: normal;
-    src: url("./fonts/JetBrainsMono[wght].ttf") format("opentype") tech(variations);
-}
-
-@font-face {
-    font-family: "monospace-font-en";
-    font-weight: bold;
     src: url("./fonts/JetBrainsMono[wght].ttf") format("opentype") tech(variations);
 }
 
 @font-face {
     font-family: "monospace-font-en";
     font-style: italic;
-    font-weight: normal;
-    src: url("./fonts/JetBrainsMono-Italic[wght].ttf") format("opentype") tech(variations);
-}
-
-@font-face {
-    font-family: "monospace-font-en";
-    font-style: italic;
-    font-weight: bold;
     src: url("./fonts/JetBrainsMono-Italic[wght].ttf") format("opentype") tech(variations);
 }
 
